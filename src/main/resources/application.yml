@@ -1,0 +1,23 @@
+server:
+  error:
+    include-message: always
+spring:
+  data:
+    mongodb:
+      auto-index-creation: true
+      authentication-database: admin
+      username: techtutor
+      password: password
+      database: usageestimate
+      port: 27017
+      host: localhost
+  jackson:
+    date-format: yyyy-MM-dd
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb:
+            core:
+              MongoTemplate: DEBUG
